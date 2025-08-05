@@ -220,14 +220,55 @@ Schedule meetings between Scrum Masters/business analysts to prioritize stories 
       </section>
     </div>
   </div>
-    <footer>
-      
-      <p>
+<footer>
+  <p>
+    ✅ Verified on Ethereum Testnet — 
+    <a href="https://sepolia.etherscan.io/address/0xc46A915D0A4d17452561D0c6ACA9CC856c6308d1" 
+       target="_blank" 
+       rel="noopener noreferrer">
+       View Contract
+    </a>
+    <span id="deploy-date" style="margin-left: 10px; font-style: italic; color: #555;">
+      (Deployed: loading…)
+    </span>
+  </p>
 
-  ✅ Verified on Ethereum Testnet —
-  <a href="https://sepolia.etherscan.io/address/0xc46A915D0A4d17452561D0c6ACA9CC856c6308d1"
-     target="_blank" rel="noopener noreferrer">View Contract</a>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+  <script>
+    async function loadDeployDate() {
+      // Connect to Sepolia via a public RPC (no MetaMask needed)
+      const web3 = new Web3("https://rpc.sepolia.org");
 
-      </p>
-    </footer>
+      const contractAddress = "0xc46A915D0A4d17452561D0c6ACA9CC856c6308d1";
+      const abi = [
+        {
+          "inputs": [],
+          "name": "meta",
+          "outputs": [
+            { "internalType": "address", "name": "owner", "type": "address" },
+            { "internalType": "string", "name": "uiURL", "type": "string" },
+            { "internalType": "string", "name": "version", "type": "string" },
+            { "internalType": "uint256", "name": "deployedAt", "type": "uint256" }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        }
+      ];
+
+      const contract = new web3.eth.Contract(abi, contractAddress);
+
+      try {
+        const [, , , deployedAt] = await contract.methods.meta().call();
+        const date = new Date(deployedAt * 1000);
+        document.getElementById("deploy-date").textContent =
+          `(Deployed: ${date.toUTCString()})`;
+      } catch (err) {
+        console.error("Error fetching deploy date:", err);
+        document.getElementById("deploy-date").textContent = "(Date unavailable)";
+      }
+    }
+
+    loadDeployDate();
+  </script>
+</footer>
 </body>
