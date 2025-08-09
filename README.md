@@ -1,49 +1,52 @@
-# Deborah Obasogie – Resume Site
+# 📄 Blockchain-Connected Resume
 
-This is the full HTML/CSS source code for my professional resume site.
-
-✅ **Live on GitHub Pages:**  
-[https://obasogie.github.io/final-polished-resume/](https://obasogie.github.io/final-polished-resume/)
-
-📦 **Permanently stored on IPFS:**  
-[https://ipfs.io/ipfs/bafybeigd65jpxvknvl6fd2qggkkez5g523m5pczrlbpdpgjhuyrkqu7nsq/](https://ipfs.io/ipfs/bafybeigd65jpxvknvl6fd2qggkkez5g523m5pczrlbpdpgjhuyrkqu7nsq/)
-
-This project demonstrates:
-- Smart contract deployment to Ethereum testnet
-- IPFS decentralized file storage
-- Full HTML/CSS resume layout with JavaScript enhancements
+A decentralized professional resume project with a static HTML/CSS/JavaScript front end hosted on GitHub Pages, and a Solidity smart contract backend planned for deployment on the Ethereum Sepolia testnet.  
+The resume includes verified credential links and permanent storage on IPFS.
 
 ---
 
-## 🔍 Project Overview
-
-This Web3-enabled resume site highlights my background as an Information Technology Consultant by combining traditional front-end design with blockchain technologies.
-
-### ✨ Features
-- **Responsive HTML/CSS layout** styled to match a professional print resume
-- **Interactive JavaScript footer** displaying live smart contract deployment date from the Ethereum Sepolia testnet
-- **Permanent backup on IPFS**, ensuring a decentralized, tamper-proof version of my resume
-- **Deployed on GitHub Pages**, making it easily accessible and public
-
-### 🔗 Technologies Used
-- `HTML`, `CSS`, `JavaScript`
-- `Solidity` smart contracts deployed via Remix IDE
-- `Web3.js` for interacting with the Ethereum contract
-- `IPFS` for decentralized hosting (via Pinata)
-- `GitHub` and `GitHub Pages` for open-source versioning and public deployment
-
-### 🔐 Smart Contract
-The Solidity smart contract includes a read-only structure of my resume sections. It was deployed to the Sepolia Ethereum testnet and contains:
-- Contact info
-- Summary
-- Proficiencies
-- Training
-- Experience
-- Work history
-- Education
-
-### 📁 IPFS Deployment
-Files were packaged and uploaded to IPFS to ensure permanent, content-addressed access to the site, accessible even without centralized servers.
+## 🔗 Live Links
+- **GitHub Pages:** [https://obasogie.github.io/final-polished-resume/](https://obasogie.github.io/final-polished-resume/)
+- **IPFS Permanent Link:** [https://ipfs.io/ipfs/bafybeiehrofdt3vib5y6xrothfpnh3ghqeh54bspsrqia6olgmthuzue6e/index.html](https://ipfs.io/ipfs/bafybeiehrofdt3vib5y6xrothfpnh3ghqeh54bspsrqia6olgmthuzue6e/index.html)
 
 ---
 
+## 🖥️ Project Features
+- Responsive, dual-column HTML/CSS layout
+- Verified credential links
+- Smart contract integration planned for Sepolia testnet
+- IPFS hosting for permanent, decentralized access
+
+---
+
+## 🛠️ Technologies Used
+- HTML5, CSS3, JavaScript
+- Solidity smart contracts
+- Ethereum Sepolia testnet
+- IPFS (via Pinata & Gateway)
+- GitHub Pages for hosting
+
+---
+
+## 📌 Repository File Overview
+- `index.html` — main resume page
+- `style.css` — site styling
+- `web3.min.js` — local Web3 library for blockchain interaction
+- `contract/bcResume.sol` — Solidity smart contract source code
+- `PROJECT-NOTES.md` — detailed project documentation and development log
+- `README.md` — this file, project overview and instructions
+
+---
+
+## 🚀 Future Improvements
+- Deploy smart contract to Sepolia and verify integration
+- Link ENS domain to IPFS-hosted resume
+- Add dynamic update functions to the smart contract
+- Provide downloadable PDF and print-friendly versions
+
+---
+
+## 👤 Author
+**Deborah Obasogie**  
+Information Technology Consultant | Web3 Enthusiast | Blockchain Developer  
+📧 obasogie.deborah@icloud.com
