@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Opening IPFS Mirror…</title>
+  </head>
+  <body>
+    <p>Opening IPFS mirror…</p>
+    <script>
+      fetch('ipfs-latest.txt', { cache: 'no-store' })
+        .then(r => r.text())
+        .then(t => {
+          const cid = t.trim().split(/\s+/)[0];
+          if (!cid) throw new Error('Missing CID');
+          location.replace(`https://ipfs.io/ipfs/${cid}/index.html`);
+        })
+        .catch(() => {
+          document.body.innerHTML = '<p>Could not load the latest CID.</p>';
+        });
+    </script>
+  </body>
+</html>
