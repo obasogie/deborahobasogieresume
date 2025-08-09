@@ -65,3 +65,11 @@
   padding: 20px;
   border-radius: 8px;
 }
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+  color: #666;
+}
