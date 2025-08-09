@@ -1,72 +1,54 @@
+# 📄 Blockchain-Connected Resume
 
-# Blockchain-Connected Resume Project
-
-**Author:** Deborah Obasogie  
-**Live Resume:** [https://obasogie.github.io/final-polished-resume](https://obasogie.github.io/final-polished-resume)  
-**Smart Contract File:** `contract/bcResume.sol`
+A decentralized professional resume project with a static HTML/CSS/JavaScript front end hosted on GitHub Pages, and a Solidity smart contract backend planned for deployment on the Ethereum Sepolia testnet.  
+The resume includes verified credential links and permanent storage on IPFS.
 
 ---
 
-## 🔷 Project Overview
-
-This project combines a professional resume front-end with a Solidity-based smart contract backend, deployed on the Sepolia Ethereum testnet. The front end is built with HTML/CSS and hosted on GitHub Pages. The smart contract, named `bcResume.sol`, will store verified metadata such as name, title, email, and a summary string.
-
----
-
-## 🌐 Front-End Details
-
-- Hosted at: https://obasogie.github.io/final-polished-resume
-- Built with HTML and CSS
-- Fully responsive and visually styled to match resume PDF
-- Contains verified hyperlinks to certifications and specializations
-- Version-controlled on GitHub under `final-polished-resume` repository
+## 🔗 Live Links
+- **GitHub Pages:** [https://obasogie.github.io/final-polished-resume/](https://obasogie.github.io/final-polished-resume/)
+- **IPFS Permanent Link:** [https://ipfs.io/ipfs/bafybeiehrofdt3vib5y6xrothfpnh3ghqeh54bspsrqia6olgmthuzue6e/index.html](https://ipfs.io/ipfs/bafybeiehrofdt3vib5y6xrothfpnh3ghqeh54bspsrqia6olgmthuzue6e/index.html)
 
 ---
 
-## 🔗 Back-End Details
-
-- Smart contract `bcResume.sol` created and committed in GitHub under `/contract`
-- To be compiled and deployed via Remix IDE
-- Deployment planned for Sepolia testnet using MetaMask wallet
-- Contract stores:
-  - `name`
-  - `title`
-  - `email`
-  - `summary`
-- Includes owner-only update functions
+## 🖥️ Project Features
+- **Responsive, dual-column HTML/CSS layout** — clear, structured, accessible across devices
+- **JavaScript-enhanced footer** — integrates Ethereum smart contract deployment date
+- **Smart contract integration** — resume will be verified on the Ethereum Sepolia testnet
+- **IPFS integration** — full resume folder pinned to the InterPlanetary File System for permanent, decentralized storage
 
 ---
 
-## 🧠 Learning Journey
-
-- Deborah has a background in IT since 1982
-- Earned a BA in 1979
-- Has completed extensive training in blockchain, smart contracts, project management, and agile development
-- 69 years young and actively learning Solidity, Remix, GitHub, and Web3 technologies
-- First smart contract deployment (Resume.sol) already completed on Sepolia in prior training
-
----
-
-## 📈 Growth Plan
-
-- Resume wording will evolve as skills and credentials are updated
-- Future features may include:
-  - PDF download or print-friendly version
-  - Footer and contact form
-  - React or Web3.js integration
-  - DApp enhancements to verify resume authenticity
-- A smart LinkedIn post will be created to share the live resume + smart contract
+## 🛠️ Technologies Used
+- HTML5, CSS3, JavaScript
+- Solidity smart contracts
+- Ethereum Sepolia testnet
+- IPFS (via Pinata & Gateway)
+- GitHub Pages for hosting
+- Replit for preview and testing
 
 ---
 
-## ✅ Repository Structure
+## 📌 Repository File Overview
+- `index.html` — main resume page
+- `style.css` — site styling
+- `web3.min.js` — local Web3 library for blockchain interaction (replaces CDN)
+- `contract/bcResume.sol` — Solidity smart contract source code
+- `PROJECT-NOTES.md` — detailed project documentation and development log
+- `README.md` — this file, project overview and instructions
 
-```
-/
-├── index.html
-├── style.css
-├── contract/
-│   └── bcResume.sol
-└── README.md (live GitHub README)
-└── PROJECT-NOTES.md (this file)
-```
+---
+
+## 🚀 Future Improvements
+- Deploy smart contract to Sepolia and verify integration
+- Link ENS domain to IPFS-hosted resume
+- Add dynamic update functions to the smart contract
+- Provide downloadable PDF and print-friendly versions
+
+---
+
+## 👤 Author
+**Deborah Obasogie**  
+Information Technology Consultant | Web3 Enthusiast | Blockchain Developer  
+📧 obasogie.deborah@icloud.com
+I
