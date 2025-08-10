@@ -7,7 +7,7 @@ The resume includes verified credential links and permanent storage on IPFS.
 
 ## 🔗 Live Links
 - **GitHub Pages:** [https://obasogie.github.io/final-polished-resume/](https://obasogie.github.io/final-polished-resume/)
-- **IPFS Permanent Link:** [https://ipfs.io/ipfs/bafybeiehrofdt3vib5y6xrothfpnh3ghqeh54bspsrqia6olgmthuzue6e/index.html](https://ipfs.io/ipfs/bafybeiehrofdt3vib5y6xrothfpnh3ghqeh54bspsrqia6olgmthuzue6e/index.html)
+- **IPFS Permanent Link:** [https://ipfs.io/ipfs/bafybeidzt4sqlx6xgtpp7e2lr2xuxmvxns2rysddcxez6jq2vswlublqk4/index.html](https://ipfs.io/ipfs/bafybeidzt4sqlx6xgtpp7e2lr2xuxmvxns2rysddcxez6jq2vswlublqk4/index.html)
 
 ---
 
