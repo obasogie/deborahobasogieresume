@@ -185,60 +185,74 @@
         </section>
       </div>
     </div>
+    
+    <footer class="footer">
+  <p>
+    ✅ Verified on Ethereum Testnet —
+    <a href="https://sepolia.etherscan.io/address/0xc46A915D0A4d17452561D0c6ACA9CC856c6308d1"
+      target="_blank"
+      rel="noopener noreferrer">
+      View Contract
+    </a>
+    <span id="deploy-date" style="margin-left: 10px; font-style: italic; color: #555;">
+      (Deployed: loading…)
+    </span>
+    <span> · </span>
+    <a class="ipfs-link" href="ipfs.html" target="_blank" rel="noopener">
+      🔗 View on IPFS (latest)
+    </a>
+  </p>
 
-    <footer>
-      <p>
-        ✅ Verified on Ethereum Testnet —
-        <a href="https://sepolia.etherscan.io/address/0xc46A915D0A4d17452561D0c6ACA9CC856c6308d1"
-          target="_blank"
-          rel="noopener noreferrer">
-          View Contract
-        </a>
-        <span id="deploy-date" style="margin-left: 10px; font-style: italic; color: #555;">
-          (Deployed: loading…)
-        </span>
-      </p>
-
-      <script src="./web3.min.js"></script>
-      <script>
-        async function loadDeployDate() {
-          const web3 = new Web3("https://rpc.sepolia.org");
-          const contractAddress = "0xc46A915D0A4d17452561D0c6ACA9CC856c6308d1";
-          const abi = [
-            {
-              "inputs": [],
-              "name": "meta",
-              "outputs": [
-                { "internalType": "address", "name": "owner", "type": "address" },
-                { "internalType": "string", "name": "uiURL", "type": "string" },
-                { "internalType": "string", "name": "version", "type": "string" },
-                { "internalType": "uint256", "name": "deployedAt", "type": "uint256" }
-              ],
-              "stateMutability": "view",
-              "type": "function"
-            }
-          ];
-
-          const contract = new web3.eth.Contract(abi, contractAddress);
-          try {
-            const [, , , deployedAt] = await contract.methods.meta().call();
-            const date = new Date(deployedAt * 1000);
-            document.getElementById("deploy-date").textContent = `(Deployed: ${date.toUTCString()})`;
-          } catch (err) {
-            console.error("Error fetching deploy date:", err);
-            document.getElementById("deploy-date").textContent = "(Date unavailable)";
-          }
+  <script src="./web3.min.js"></script>
+  <script>
+    async function loadDeployDate() {
+      const web3 = new Web3("https://rpc.sepolia.org");
+      const contractAddress = "0xc46A915D0A4d17452561D0c6ACA9CC856c6308d1";
+      const abi = [
+        {
+          "inputs": [],
+          "name": "meta",
+          "outputs": [
+            { "internalType": "address", "name": "owner", "type": "address" },
+            { "internalType": "string", "name": "uiURL", "type": "string" },
+            { "internalType": "string", "name": "version", "type": "string" },
+            { "internalType": "uint256", "name": "deployedAt", "type": "uint256" }
+          ],
+          "stateMutability": "view",
+          "type": "function"
         }
-        loadDeployDate();
-      </script>
-      <p>
- <a href="ipfs.html" target="_blank" rel="noopener">
-  🔗 View on IPFS (latest)
-</a>
+      ];
 
+      const contract = new web3.eth.Contract(abi, contractAddress);
+      try {
+        const [, , , deployedAt] = await contract.methods.meta().call();
+        const date = new Date(deployedAt * 1000);
+        document.getElementById("deploy-date").textContent = `(Deployed: ${date.toUTCString()})`;
+      } catch (err) {
+        console.error("Error fetching deploy date:", err);
+        document.getElementById("deploy-date").textContent = "(Date unavailable)";
+      }
+    }
+    loadDeployDate();
+  </script>
 
-</p>
+  <!-- Script to hide IPFS link when on IPFS gateway -->
+  <script>
+    (function () {
+      var onIpfs = location.hostname.endsWith('.ipfs.dweb.link') ||
+                   location.hostname === 'ipfs.io' ||
+                   location.pathname.startsWith('/ipfs/');
+      if (onIpfs) {
+        var ipfsLink = document.querySelector('.footer .ipfs-link');
+        var dot = ipfsLink && ipfsLink.previousElementSibling;
+        if (ipfsLink) {
+          if (dot && dot.textContent.trim() === '·') dot.remove();
+          ipfsLink.remove();
+        }
+      }
+    })();
+  </script>
+</footer>
 
-    </footer>
   </body>
 </html>
