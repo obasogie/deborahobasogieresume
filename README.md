@@ -12,12 +12,11 @@ The resume includes verified credential links and permanent storage on IPFS.
 ---
 
 ## 🖥️ Project Features
-- Responsive, dual-column HTML/CSS layout
-- Verified credential links
-- Smart contract integration planned for Sepolia testnet
-- IPFS hosting for permanent, decentralized access
-
----
+- **Responsive, dual-column HTML/CSS layout** — clear, structured, accessible across devices
+- **JavaScript-enhanced footer** — integrates Ethereum smart contract deployment date
+- **Smart contract integration** — resume will be verified on the Ethereum Sepolia testnet
+- **IPFS integration** — full resume folder pinned to the InterPlanetary File System for permanent, decentralized storage
+--
 
 ## 🛠️ Technologies Used
 - HTML5, CSS3, JavaScript
