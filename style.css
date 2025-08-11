@@ -66,10 +66,30 @@
   border-radius: 8px;
 }
 
-/* Footer */
-footer {
+/* Footer styling */
+.footer {
   text-align: center;
-  padding: 10px;
-  font-size: 0.9em;
-  color: #666;
+  padding: 12px 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #003366;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer span,
+.footer a {
+  margin: 0 4px;
+}
+
+#deploy-date {
+  margin-left: 10px;
+  font-style: italic;
+  color: #555;
 }
