@@ -66,8 +66,22 @@ The resume includes verified credential links and permanent storage on IPFS.
 
 ---
 
+## CID Rotation — Authoritative Steps
+- Update `ipfs-latest.txt` with **<NEW_CID>** (single line, no spaces).
+- `ipfs.html` auto-redirects; **no other files change**.
+- Commit one-liner:
+  CID rotated → updated ipfs-latest.txt and ipfs.html to new CID: <NEW_CID>
+- Verify: open `ipfs.html` → redirects to `https://ipfs.io/ipfs/<NEW_CID>/`.
+
+## Footer Link Rule
+- On GitHub Pages: show **Etherscan + IPFS (latest)** link.
+- On IPFS gateways: the **IPFS link is hidden** by the script in `index.html`.
+- The IPFS footer link should target `ipfs.html` (not a hardcoded CID).
+
+---
+
 ## 👤 Author
 **Deborah Obasogie**  
 Information Technology Consultant | Web3 Enthusiast | Blockchain Developer  
 📧 obasogie.deborah@icloud.com
-I
+
