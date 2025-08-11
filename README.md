@@ -45,7 +45,14 @@ The resume includes verified credential links and permanent storage on IPFS.
 
 ---
 
+
 ## 👤 Author
 **Deborah Obasogie**  
 Information Technology Consultant | Web3 Enthusiast | Blockchain Developer  
-📧 obasogie.deborah@icloud.com
+📧 obasogie.deborah@icloud.com  
+
+---
+
+## 🛡️ Maintenance References
+- [Footer Links Policy](docs/footer-links.md) — rules for showing Etherscan/IPFS links on GitHub Pages vs IPFS gateways.
+- [Updating IPFS CID](docs/cid-update.md) — step-by-step for rotating the IPFS CID, including `ipfs-latest.txt` and `ipfs.html`.
