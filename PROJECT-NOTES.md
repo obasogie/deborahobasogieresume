@@ -1,4 +1,8 @@
-# 📄 Blockchain-Connected Resume
+# 📘 Project Documentation Summary
+
+**Project:** Blockchain-Connected Resume — UI on GitHub Pages, backend on Sepolia testnet.
+
+--
 
 A decentralized professional resume project with a static HTML/CSS/JavaScript front end hosted on GitHub Pages, and a Solidity smart contract backend planned for deployment on the Ethereum Sepolia testnet.  
 The resume includes verified credential links and permanent storage on IPFS.
@@ -10,6 +14,21 @@ The resume includes verified credential links and permanent storage on IPFS.
 - **IPFS Permanent Link:** [https://ipfs.io/ipfs/bafybeidzt4sqlx6xgtpp7e2lr2xuxmvxns2rysddcxez6jq2vswlublqk4/index.html](https://ipfs.io/ipfs/bafybeidzt4sqlx6xgtpp7e2lr2xuxmvxns2rysddcxez6jq2vswlublqk4/index.html)
 
 ---
+## 🖥️ Front End
+- HTML/CSS resume UI with responsive dual-column layout
+- Verified credential links
+- Hosted on GitHub Pages
+- Version-controlled on GitHub
+
+---
+
+## 🔗 Back End
+- Solidity smart contract `bcResume.sol` created and committed
+- Read-only sections: Contact Info, Proficiencies, Recent Training, Professional Experience, Education, Work History, Summary & Highlights
+- Deployment on Sepolia testnet via Remix
+
+---
+
 
 ## 🖥️ Project Features
 - **Responsive, dual-column HTML/CSS layout** — clear, structured, accessible across devices
