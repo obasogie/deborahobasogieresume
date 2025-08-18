@@ -1,3 +1,15 @@
+# Resume Project
+
+![Resume Access Card](card/resume_access_card_standard.png)
+
+This project now includes a **Resume Access Card** linking my on-chain resume.
+
+- 📄 [10 cards per sheet (PDF)](card/resume_access_cards_10up.pdf)  
+- ✂️ [10 cards with cut lines (PDF)](card/resume_access_cards_10up_cutlines.pdf)  
+- 🎨 [Style Guide](card/resume_access_card_style_guide.txt)  
+- 🌐 [HTML + CSS Template](card/resume_access_card.html)
+
+
 # 📄 Blockchain-Connected Resume
 
 A decentralized professional resume project with a static HTML/CSS/JavaScript front end hosted on GitHub Pages, and a Solidity smart contract backend planned for deployment on the Ethereum Sepolia testnet.  
