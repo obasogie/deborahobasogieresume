@@ -34,10 +34,10 @@ This makes the resume:
 ## 📸 Preview
 
 The card includes:
-- **Front:** Name, title, and QR codes.  
-- **Back:** Verification statement, spacing for professional design.
+- **Left side:** Name and title.  
+- **Right side:** QR codes linking to my resumes on GitHub and IPFS.
 
-(Use `card/` folder in the repository to store the actual PNG/PDF design of the card.)
+(Use card/ folder in the repository to store the actual PNG/PDF design of the card.)
 
 ---
 
