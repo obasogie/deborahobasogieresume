@@ -1,0 +1,151 @@
+/* RESUME Access Card — CSS (print-ready) */
+
+/* Optional web fonts (fallbacks included) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@900&display=swap');
+
+:root{
+  --gray:#2E2E2E;
+  --black:#000000;
+  --white:#FFFFFF;
+  --divider:#CCCCCC;
+}
+
+/* Print page setup */
+@page{
+  size: 3.5in 2in;
+  margin: 0;
+}
+
+/* Card container */
+.card{
+  width: 3.5in;
+  height: 2in;
+  background: var(--gray);
+  color: var(--white);
+  display: flex;
+  border-radius: 0.18in; /* rounded corners */
+  overflow: hidden;
+}
+
+/* Left text column */
+.card-left{
+  flex:1;
+  padding: 0.18in 0.20in;
+  display:flex;
+  flex-direction:column;
+  gap: 0.06in;
+}
+
+.card-headline{
+  font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+  font-weight: 900; /* Black */
+  font-size: 22pt;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.card-subhead{
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 12pt;
+  margin-top: 2pt;
+}
+
+.card-name{
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16pt;
+  margin-top: 4pt;
+}
+
+.card-email{
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+}
+
+.card-divider{
+  height: 1px;
+  background: var(--divider);
+  margin: 4pt 0;
+}
+
+.card-verify{
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 9pt;
+}
+
+/* Right QR strip */
+.card-right{
+  width: 1.4in;
+  background: var(--black);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-evenly;
+  padding: 0.12in;
+  gap: 0.08in;
+}
+
+/* Each QR block */
+.qr-block{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* QR image sizing (replace src in HTML) */
+.qr{
+  width: 1.0in;
+  height: 1.0in;
+  object-fit: contain;
+  display:block;
+  background: transparent;
+}
+
+/* Labels next to/below QR */
+.qr-label{
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 9pt; /* reduce for GitHub if needed */
+  color: var(--white);
+  text-align:center;
+  margin-top: 2pt;
+}
+
+/* Utility: center whole card on a page preview */
+.page{
+  width: 100%;
+  height: 100vh;
+  background: #eee;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 1rem;
+}
+
+/* Example HTML structure (for reference)
+<div class="page">
+  <div class="card">
+    <div class="card-left">
+      <div class="card-headline">RESUME</div>
+      <div class="card-subhead">Access Card</div>
+      <div class="card-name">Deborah Obasogie</div>
+      <div class="card-email">deborahobasogie@gmail.com</div>
+      <div class="card-divider"></div>
+      <div class="card-verify">Verified on Ethereum & IPFS</div>
+    </div>
+    <div class="card-right">
+      <div class="qr-block">
+        <img class="qr" src="github_qr.png" alt="GitHub QR">
+        <div class="qr-label">GitHub</div>
+      </div>
+      <div class="qr-block">
+        <img class="qr" src="ipfs_qr.png" alt="IPFS QR">
+        <div class="qr-label">IPFS</div>
+      </div>
+    </div>
+  </div>
+</div>
+*/
