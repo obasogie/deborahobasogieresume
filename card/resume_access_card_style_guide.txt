@@ -1,0 +1,70 @@
+RESUME Access Card — Color & Font Style Guide
+--------------------------------------------------
+
+Color Palette (Hex / RGB)
+1) Dark Gray (card background)
+   - HEX: #2E2E2E
+   - RGB: 46, 46, 46
+
+2) Black (QR strip background, text emphasis)
+   - HEX: #000000
+   - RGB: 0, 0, 0
+
+3) White (primary text and QR labels)
+   - HEX: #FFFFFF
+   - RGB: 255, 255, 255
+
+4) Divider Line (thin line under email)
+   - HEX: #CCCCCC
+   - RGB: 204, 204, 204
+
+Typography
+- Headline “RESUME”
+  • Font: Serif (preferred: 'Merriweather', fallback: 'Times New Roman', 'Georgia', serif)
+  • Weight: 900 (Black) or Bold
+  • Size: ~22 pt (on a 3.5in × 2in card)
+  • Letter-spacing: Slightly increased (+2%)
+
+- Subhead “Access Card”
+  • Font: Sans-serif (preferred: 'Inter', fallback: 'Helvetica Neue', 'Arial', sans-serif)
+  • Weight: SemiBold / 600
+  • Size: ~12 pt
+  • Case: Title Case
+
+- Name “Deborah Obasogie”
+  • Font: Sans-serif (preferred: 'Inter', fallback: 'Helvetica Neue', 'Arial', sans-serif)
+  • Weight: Bold / 700
+  • Size: ~16 pt
+
+- Email
+  • Font: Sans-serif (same family as Name)
+  • Weight: Regular / 400
+  • Size: ~9.5–10 pt
+
+- “Verified on Ethereum & IPFS” line
+  • Font: Sans-serif (same family as Email)
+  • Weight: Regular / 400
+  • Size: ~8.5–9 pt
+
+- QR Labels “GitHub”, “IPFS” (on black strip)
+  • Font: Sans-serif (same family as Email)
+  • Weight: Medium / 500
+  • Size: ~9 pt for IPFS; GitHub slightly smaller if needed to balance
+  • Color: #FFFFFF (white)
+  • Alignment: Vertically centered with each QR code
+
+Layout & Spacing
+- Card size: 3.5 in × 2 in (300 DPI export: 1050 × 600 px)
+- Margins (gray visible border): ~0.10–0.12 in on all sides
+- Black QR strip width: ~1.35–1.45 in (right side)
+- QR code boxes: ~1.0 in square each, equal padding inside the strip
+- Divider line: 1 px (print hairline), color #CCCCCC, full width of text column
+- Safe zones: keep all text ≥0.12 in from any edge
+
+Font Stacks for Digital Reproduction
+- Serif stack: "Merriweather", "Times New Roman", "Georgia", serif
+- Sans stack: "Inter", "Helvetica Neue", "Arial", "Liberation Sans", sans-serif
+
+Notes
+- When printing at home from PNG/PDF, what you see is what will print—no automatic borders are added.
+- Use the provided 300 DPI assets for crisp QR readability.
