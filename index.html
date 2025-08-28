@@ -22,6 +22,32 @@
   </head>
 
   <body>
+<!-- BEGIN: Web3 Wallet Panel (addbcResume) -->
+    <section id="web3-panel" class="card" style="margin: 1rem 0; padding: 1rem; border: 1px solid #ddd; border-radius: 12px;">
+      <h3 style="font-style: italic;">Web3 — addbcResume (Sepolia)</h3>
+      <p id="web3-status">Disconnected</p>
+      <p id="web3-network">Network: (unknown)</p>
+      <p id="web3-account">Account: (not connected)</p>
+
+      <div style="display:flex; gap: .5rem; flex-wrap: wrap; margin: .5rem 0 1rem;">
+        <button id="connect-btn" type="button">Connect Wallet</button>
+        <button id="switch-network-btn" type="button" style="display:none;">Switch to Sepolia</button>
+      </div>
+
+      <div id="wrong-network-hint" style="display:none; font-size:.95rem;">
+        You are not on Sepolia. Click “Switch to Sepolia,” or change networks in MetaMask.
+      </div>
+
+      <hr style="margin: 1rem 0;">
+
+      <div>
+        <strong>Contract status:</strong> <span id="contract-status">Waiting for connection…</span><br>
+        <strong>meta():</strong> <span id="contract-meta">—</span>
+      </div>
+    </section>
+    <!-- END: Web3 Wallet Panel (addbcResume) -->
+
+
     <div class="container">
       <div class="left-column">
         <section>
@@ -254,5 +280,7 @@
   </script>
 </footer>
 
-  </body>
+  
+    <script type="module" src="./app.js"></script>
+</body>
 </html>
