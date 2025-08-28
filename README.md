@@ -1,70 +1,17 @@
-# Resume Project
+# addbcResume Web3 Panel (for deborahobasogieresume)
 
-![Resume Access Card](card/resume_access_card_standard.png)
+This patch adds a small Web3 panel to your existing résumé page so you can connect MetaMask, check the Sepolia network, and read `meta()` from **addbcResume** once deployed.
 
-This project now includes a **Resume Access Card** linking my on-chain resume.
+## Files
+- `index.html` — your current page with the panel inserted just under the header (or body if no header).
+- `style.css` — unchanged from your uploaded version.
+- `app.js` — Ethers v6 helper to connect and read `meta()`.
 
-- 📄 [10 cards per sheet (PDF)](card/resume_access_cards_10up.pdf)  
-- ✂️ [10 cards with cut lines (PDF)](card/resume_access_cards_10up_cutlines.pdf)  
-- 🎨 [Style Guide](card/resume_access_card_style_guide.txt)  
-- 🌐 [HTML + CSS Template](card/resume_access_card.html)
-
-
-# 📄 Blockchain-Connected Resume
-
-A decentralized professional resume project with a static HTML/CSS/JavaScript front end hosted on GitHub Pages, and a Solidity smart contract backend planned for deployment on the Ethereum Sepolia testnet.  
-The resume includes verified credential links and permanent storage on IPFS.
-
----
-
-## 🔗 Live Links
-- **GitHub Pages:** [https://obasogie.github.io/final-polished-resume/](https://obasogie.github.io/final-polished-resume/)
-- **IPFS Permanent Link:** [https://ipfs.io/ipfs/bafybeidzt4sqlx6xgtpp7e2lr2xuxmvxns2rysddcxez6jq2vswlublqk4/index.html](https://ipfs.io/ipfs/bafybeidzt4sqlx6xgtpp7e2lr2xuxmvxns2rysddcxez6jq2vswlublqk4/index.html)
-
----
-
-## 🖥️ Project Features
-- **Responsive, dual-column HTML/CSS layout** — clear, structured, accessible across devices
-- **JavaScript-enhanced footer** — integrates Ethereum smart contract deployment date
-- **Smart contract integration** — resume will be verified on the Ethereum Sepolia testnet
-- **IPFS integration** — full resume folder pinned to the InterPlanetary File System for permanent, decentralized storage
---
-
-## 🛠️ Technologies Used
-- HTML5, CSS3, JavaScript
-- Solidity smart contracts
-- Ethereum Sepolia testnet
-- IPFS (via Pinata & Gateway)
-- GitHub Pages for hosting
-
----
-
-## 📌 Repository File Overview
-- `index.html` — main resume page
-- `style.css` — site styling
-- `web3.min.js` — local Web3 library for blockchain interaction
-- `contract/bcResume.sol` — Solidity smart contract source code
-- `PROJECT-NOTES.md` — detailed project documentation and development log
-- `README.md` — this file, project overview and instructions
-
----
-
-## 🚀 Future Improvements
-- Deploy smart contract to Sepolia and verify integration
-- Link ENS domain to IPFS-hosted resume
-- Add dynamic update functions to the smart contract
-- Provide downloadable PDF and print-friendly versions
-
----
-
-
-## 👤 Author
-**Deborah Obasogie**  
-Information Technology Consultant | Web3 Enthusiast | Blockchain Developer  
-📧 obasogie.deborah@icloud.com  
-
----
-
-## 🛡️ Maintenance References
-- [Footer Links Policy](docs/footer-links.md) — rules for showing Etherscan/IPFS links on GitHub Pages vs IPFS gateways.
-- [Updating IPFS CID](docs/cid-update.md) — step-by-step for rotating the IPFS CID, including `ipfs-latest.txt` and `ipfs.html`.
+## Setup
+1. Paste your deployed **addbcResume** contract address into `app.js`:
+   ```js
+   export let CONTRACT_ADDRESS = "0x...";
+   ```
+2. Paste the full **ABI** into `app.js` (include the `meta()` function if you want the sample read to work).
+3. Commit & push to `main`, then open your GitHub Pages site.
+4. Click **Connect Wallet**. If you’re not on Sepolia, use **Switch to Sepolia**.
