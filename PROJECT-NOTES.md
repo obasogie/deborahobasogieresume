@@ -1,11 +1,11 @@
 # 📘 Project Documentation Summary
 
-**Project:** Blockchain-Connected Resume — UI on GitHub Pages, backend on Sepolia testnet.
+**Project:** Blockchain-Connected Updatable Resume — UI on GitHub Pages, backend on Sepolia testnet.
 
 --
 
 A decentralized professional resume project with a static HTML/CSS/JavaScript front end hosted on GitHub Pages, and a Solidity smart contract backend planned for deployment on the Ethereum Sepolia testnet.  
-The resume includes verified credential links and permanent storage on IPFS.
+The updatable resume includes verified credential links and permanent storage on IPFS, with a requirement to be accessible via deborah.obasogie.eth.
 
 ---
 
@@ -59,10 +59,8 @@ The resume includes verified credential links and permanent storage on IPFS.
 ---
 
 ## 🚀 Future Improvements
-- Deploy smart contract to Sepolia and verify integration
-- Link ENS domain to IPFS-hosted resume
-- Add dynamic update functions to the smart contract
-- Provide downloadable PDF and print-friendly versions
+- Link ENS domain `deborah.obasogie.eth` to IPFS-hosted resume (fulfill requirement)
+
 
 ---
 
