@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deborah Obasogie Resume</title>
+    <title>Resume of Deborah Obasogie</title>
     <link rel="stylesheet" href="style.css" />
     <style>
       h1 {
@@ -22,7 +22,7 @@
   </head>
 
   <body>
-<!-- BEGIN: Web3 Wallet Panel (addbcResume) -->
+    <!-- BEGIN: Web3 Wallet Panel (addbcResume) -->
     <section id="web3-panel" class="card" style="margin: 1rem 0; padding: 1rem; border: 1px solid #ddd; border-radius: 12px;">
       <h3 style="font-style: italic;">Web3 — addbcResume (Sepolia)</h3>
       <p id="web3-status">Disconnected</p>
@@ -47,11 +47,10 @@
     </section>
     <!-- END: Web3 Wallet Panel (addbcResume) -->
 
-
     <div class="container">
       <div class="left-column">
         <section>
-          <h1>DEBORAH OBASOGIE</h1>
+          <h1>Resume of Deborah Obasogie</h1>
           <p class="subtitle">Information Technology Consultant</p>
           <p><a href="mailto:obasogie.deborah@icloud.com">obasogie.deborah@icloud.com</a></p>
         </section>
@@ -148,7 +147,7 @@
           <h2>Summary</h2>
           <ul>
             <li>Expertise in Agile (SAFe, Scrum, Kanban), Waterfall, and coordinating releases.</li>
-            <li>Understanding of blockchain infrastructure, smart contracts, DeFi, and DApps.</li>
+            <li>Understanding of blockchain infrastructure, smart contracts, Decentralized Finance (DeFi), and Decentralized Applications (DApps).</li>
             <li>Experience with MetaMask, web3.js, Node.js and Git-based collaboration tools.</li>
             <li>Strong programming in JavaScript, smart contract and DApps development.</li>
             <li>Skilled in problem solving and debugging blockchain applications.</li>
@@ -211,76 +210,16 @@
         </section>
       </div>
     </div>
-    
+
     <footer class="footer">
-  <p>
-    ✅ Verified on Ethereum Testnet —
-    <a href="https://sepolia.etherscan.io/address/0xc46A915D0A4d17452561D0c6ACA9CC856c6308d1"
-      target="_blank"
-      rel="noopener noreferrer">
-      View Contract
-    </a>
-    <span id="deploy-date" style="margin-left: 10px; font-style: italic; color: #555;">
-      (Deployed: loading…)
-    </span>
-    <span> · </span>
-    <a class="ipfs-link" href="ipfs.html" target="_blank" rel="noopener">
-      🔗 View on IPFS (latest)
-    </a>
-  </p>
+      <p>
+        DO • Verified on Ethereum &amp; IPFS —
+        <a href="https://github.com/obasogie/deborahobasogieresume" target="_blank" rel="noopener">Repo</a> ·
+        <a href="ipfs.html" target="_blank" rel="noopener">IPFS</a> ·
+        <a href="LICENSE" target="_blank" rel="noopener">License</a>
+      </p>
+    </footer>
 
-  <script src="./web3.min.js"></script>
-  <script>
-    async function loadDeployDate() {
-      const web3 = new Web3("https://rpc.sepolia.org");
-      const contractAddress = "0xc46A915D0A4d17452561D0c6ACA9CC856c6308d1";
-      const abi = [
-        {
-          "inputs": [],
-          "name": "meta",
-          "outputs": [
-            { "internalType": "address", "name": "owner", "type": "address" },
-            { "internalType": "string", "name": "uiURL", "type": "string" },
-            { "internalType": "string", "name": "version", "type": "string" },
-            { "internalType": "uint256", "name": "deployedAt", "type": "uint256" }
-          ],
-          "stateMutability": "view",
-          "type": "function"
-        }
-      ];
-
-      const contract = new web3.eth.Contract(abi, contractAddress);
-      try {
-        const [, , , deployedAt] = await contract.methods.meta().call();
-        const date = new Date(deployedAt * 1000);
-        document.getElementById("deploy-date").textContent = `(Deployed: ${date.toUTCString()})`;
-      } catch (err) {
-        console.error("Error fetching deploy date:", err);
-        document.getElementById("deploy-date").textContent = "(Date unavailable)";
-      }
-    }
-    loadDeployDate();
-  </script>
-
-  <!-- Script to hide IPFS link when on IPFS gateway -->
-  <script>
-    (function () {
-      var onIpfs = location.hostname.endsWith('.ipfs.dweb.link') ||
-                   location.hostname === 'ipfs.io' ||
-                   location.pathname.startsWith('/ipfs/');
-      if (onIpfs) {
-        var ipfsLink = document.querySelector('.footer .ipfs-link');
-        var dot = ipfsLink && ipfsLink.previousElementSibling;
-        if (ipfsLink) {
-          if (dot && dot.textContent.trim() === '·') dot.remove();
-          ipfsLink.remove();
-        }
-      }
-    })();
-  </script>
-</footer>
-
-  
-    <script type="module" src="./app.js"></script>
-</body>
+    <script type="module" src="scripts/app.js"></script>
+  </body>
 </html>
