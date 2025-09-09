@@ -1,10 +1,10 @@
 # Deborah Obasogie — Résumé Project
 
-**Mirror (bcResume)** + **Writable (addbcResume)** — unified GitHub Pages & IPFS presence.  
-All wording preserved in full; no abbreviations. Section order and styling match the PDF design.
+# Writable Resume — deborahobasogieresume
 
-## Live Demos
-- GitHub Pages (Writable UI): <ADD_LINK>
+## Live Demo
+https://obasogie.github.io/deborahobasogieresume/
+
 - IPFS Mirror: <ADD_IPFS_LINK>
 
 ## Contracts
