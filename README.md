@@ -3,9 +3,9 @@
 # Writable Resume — deborahobasogieresume
 
 ## Live Demo
-https://obasogie.github.io/deborahobasogieresume/
+https://deborahobasogie.eth.link
 
-- IPFS: <ADD_IPFS_LINK>
+- ENS/IPFS: deborahobasogie.eth
 
 ## Contracts
 - `contracts/addbcResume.sol` (writable, owner-only updates; Solidity 0.8.21)
@@ -23,4 +23,3 @@ https://obasogie.github.io/deborahobasogieresume/
 
 ## Notes
 - Compiler: **0.8.21** for all Solidity work.
-
