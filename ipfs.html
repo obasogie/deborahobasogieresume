@@ -2,21 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Opening IPFS Mirror…</title>
+    <title>Opening Writable Resume…</title>
   </head>
   <body>
-    <p>Opening IPFS mirror…</p>
+    <p>Redirecting to deborahobasogie.eth on IPFS…</p>
     <script>
-      fetch('ipfs-latest.txt', { cache: 'no-store' })
-        .then(r => r.text())
-        .then(t => {
-          const cid = t.trim().split(/\s+/)[0];
-          location.replace(`https://ipfs.io/ipfs/${cid}/index.html`);
-        })
-        .catch(() => {
-          document.body.innerHTML = '<p>Could not load the latest CID.</p>';
-        });
+      // Direct to ENS/IPNS for deborahobasogie.eth
+      location.replace("https://gateway.ipfs.io/ipns/deborahobasogie.eth");
     </script>
   </body>
 </html>
-
