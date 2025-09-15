@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Opening Writable Resume…</title>
+  </head>
+  <body>
+    <p>Opening Writable Resume…</p>
+    <script>
+      fetch('ipfs-cid.txt', { cache: 'no-store' })
+        .then(r => r.text())
+        .then(t => {
+          const cid = t.trim().split(/\s+/)[0];
+          location.replace(`https://ipfs.io/ipfs/${cid}/index.html`);
+        })
+        .catch(() => {
+          document.body.innerHTML = '<p>Could not load the Writable CID.</p>';
+        });
+    </script>
+  </body>
+</html>
