@@ -21,7 +21,7 @@ modifier onlyOwner() {
         arr.pop();
     }
 
-    /* ============ COPY STRINGS  ============ */
+    /* ============ COPY STRINGS ============ */
     function _copyStrings(string[] storage src) internal view returns (string[] memory dst) {
         dst = new string[](src.length);
         for (uint256 i = 0; i < src.length; i++) {
@@ -459,4 +459,3 @@ modifier onlyOwner() {
         return workhistories[idx].items[itemIdx];
     }
 }
-
