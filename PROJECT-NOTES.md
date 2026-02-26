@@ -5,14 +5,15 @@
 --
 
 A decentralized professional resume project with a static HTML/CSS/JavaScript front end hosted on GitHub Pages, and a Solidity smart contract backend planned for deployment on the Ethereum Sepolia testnet.  
-The updatable resume includes verified credential links and permanent storage on IPFS, with a requirement to be accessible via deborah.obasogie.eth.
+The updatable resume includes verified credential links and permanent storage on IPFS, with a requirement to be accessible via deborahobasogieresume/.
 
 ---
 
 ## 🔗 Live Links
-- **GitHub Pages:** [https://obasogie.github.io/final-polished-resume/](https://obasogie.github.io/final-polished-resume/)
-- **IPFS Permanent Link:** [https://ipfs.io/ipfs/bafybeidzt4sqlx6xgtpp7e2lr2xuxmvxns2rysddcxez6jq2vswlublqk4/index.html](https://ipfs.io/ipfs/bafybeidzt4sqlx6xgtpp7e2lr2xuxmvxns2rysddcxez6jq2vswlublqk4/index.html)
+- **GitHub Pages:** [https://obasogie.github.io/deborahobasogieresume](https://obasogie.github.io/deborahobasogieresume/)
+- **IPFS Permanent Link:** [https://ipfs.io/ipfs/bafybeia6iruroovasdqntvdmvcckvmeu2i4corlfmedu4b5fmhndlz7o5i/](https://ipfs.io/ipfs/bafybeia6iruroovasdqntvdmvcckvmeu2i4corlfmedu4b5fmhndlz7o5i/)
 
+bafybeia6iruroovasdqntvdmvcckvmeu2i4corlfmedu4b5fmhndlz7o5i
 ---
 ## 🖥️ Front End
 - HTML/CSS resume UI with responsive dual-column layout
@@ -23,8 +24,8 @@ The updatable resume includes verified credential links and permanent storage on
 ---
 
 ## 🔗 Back End
-- Solidity smart contract `bcResume.sol` created and committed
-- Read-only sections: Contact Info, Proficiencies, Recent Training, Professional Experience, Education, Work History, Summary & Highlights
+- Solidity smart contract `addbcResume.sol` created and committed
+- Sections - Updatable: Contact Info, Proficiencies, Recent Training, Professional Experience, Education, Work History, Summary & Highlights
 - Deployment on Sepolia testnet via Remix
 
 ---
@@ -44,7 +45,8 @@ The updatable resume includes verified credential links and permanent storage on
 - Ethereum Sepolia testnet
 - IPFS (via Pinata & Gateway)
 - GitHub Pages for hosting
-- Replit for preview and testing
+- Replit & Remix IDE or preview and testing
+- MetaMask 
 
 ---
 
@@ -59,27 +61,27 @@ The updatable resume includes verified credential links and permanent storage on
 ---
 
 ## 🚀 Future Improvements
-- Link ENS domain `deborah.obasogie.eth` to IPFS-hosted resume (fulfill requirement)
-
+- Link ENS domain `deborah.obasogie.eth` to IPFS-hosted resume.
 
 ---
 
 ## CID Rotation — Authoritative Steps
-- Update `ipfs-latest.txt` with **<NEW_CID>** (single line, no spaces).
-- `ipfs.html` auto-redirects; **no other files change**.
+- Update `ipfs-cid.txt` with **<NEW_CID>** (single line, no spaces).
+- `eth.html` auto-redirects; **no other files change**.
 - Commit one-liner:
-  CID rotated → updated ipfs-latest.txt and ipfs.html to new CID: <NEW_CID>
-- Verify: open `ipfs.html` → redirects to `https://ipfs.io/ipfs/<NEW_CID>/`.
+  CID rotated → updated ipfs-cid.txt and eth.html to new CID: <NEW_CID>
+- Verify: open `eth.html` → redirects to `https://ipfs.io/ipfs/<NEW_CID>/`.
 
 ## Footer Link Rule
 - On GitHub Pages: show **Etherscan + IPFS (latest)** link.
 - On IPFS gateways: the **IPFS link is hidden** by the script in `index.html`.
-- The IPFS footer link should target `ipfs.html` (not a hardcoded CID).
+- The IPFS footer link should target `eth.html` (not a hardcoded CID).
 
 ---
 
 ## 👤 Author
 **Deborah Obasogie**  
-Information Technology Consultant | Web3 Enthusiast | Blockchain Developer  
+Consultant - Smart Contract, Dapps Developer | Remote - Open to contract / project-based assignments
+(U.S. and International)|   
 📧 obasogie.deborah@icloud.com
 
