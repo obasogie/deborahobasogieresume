@@ -18,8 +18,5 @@ https://obasogie.github.io/deborahobasogieresume
 ## How to Test (Remix VM Prague)
 - See **docs/testing/testing.md**
 
-## Career Timeline
-- 1999 → Now — see **docs/history/** and `resume-archives/`
-
 ## Notes
 - Compiler: **0.8.21** for all Solidity work.
