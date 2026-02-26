@@ -18,5 +18,10 @@ https://obasogie.github.io/deborahobasogieresume
 ## How to Test (Remix VM Prague)
 - See **docs/testing/testing.md**
 
+## IPFS Writable
+- eth.html - redirect helper for the latest writable-resume CID.
+- Latest CID: bafybeia6iruroovasdqntvdmvcckvmeu2i4corlfmedu4b5fmhndlz7o5i (see ipfs-cid.txt) or open
+  https://ipfs.io/ipfs/bafybeia6iruroovasdqntvdmvcckvmeu2i4corlfmedu4b5fmhndlz7o5i
+  
 ## Notes
 - Compiler: **0.8.21** for all Solidity work.
