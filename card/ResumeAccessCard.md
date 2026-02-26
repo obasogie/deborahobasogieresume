@@ -7,7 +7,7 @@ This Resume Access Card provides quick access to Deborah Obasogie’s blockchain
 ## 🔗 Access Points
 
 - **GitHub Pages (Full Resume Website):**  
-  [https://obasogie.github.io/final-polished-resume/](https://obasogie.github.io/final-polished-resume/)
+ (https://obasogie.github.io/deborahobasogieresume/)/](https://[obasogie.github.io/final-polished-resume](https://obasogie.github.io/deborahobasogieresume/)/)
 
 - **IPFS (Decentralized Storage):**  
   Accessible via QR code on the card.
