@@ -45,7 +45,8 @@ The updatable resume includes verified credential links and permanent storage on
 - IPFS (via Pinata & Gateway)
 - GitHub Pages for hosting
 - Replit & Remix IDE or preview and testing
-- MetaMask 
+- MetaMask
+- web3
 
 ---
 
@@ -55,6 +56,7 @@ The updatable resume includes verified credential links and permanent storage on
 - `web3.min.js` — local Web3 library for blockchain interaction (replaces CDN)
 - `contract/bcResume.sol` — Solidity smart contract source code
 - `PROJECT-NOTES.md` — detailed project documentation and development log
+- `PROJECTS.md` — high level project overview log
 - `README.md` — this file, project overview and instructions
 
 ---
