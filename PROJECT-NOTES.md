@@ -13,7 +13,6 @@ The updatable resume includes verified credential links and permanent storage on
 - **GitHub Pages:** [https://obasogie.github.io/deborahobasogieresume](https://obasogie.github.io/deborahobasogieresume/)
 - **IPFS Permanent Link:** [https://ipfs.io/ipfs/bafybeia6iruroovasdqntvdmvcckvmeu2i4corlfmedu4b5fmhndlz7o5i/](https://ipfs.io/ipfs/bafybeia6iruroovasdqntvdmvcckvmeu2i4corlfmedu4b5fmhndlz7o5i/)
 
-bafybeia6iruroovasdqntvdmvcckvmeu2i4corlfmedu4b5fmhndlz7o5i
 ---
 ## 🖥️ Front End
 - HTML/CSS resume UI with responsive dual-column layout
