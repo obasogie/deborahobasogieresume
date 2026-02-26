@@ -16,7 +16,7 @@ https://obasogie.github.io/deborahobasogieresume
 - `ProjectsScript.txt` (skills showcase for writable resume)
 
 ## How to Test (Remix VM Prague)
-- See **docs/testing/only-owner.md**
+- See **docs/testing/testing.md**
 
 ## Career Timeline
 - 1999 → Now — see **docs/history/** and `resume-archives/`
