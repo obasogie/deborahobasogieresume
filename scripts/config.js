@@ -1,5 +1,5 @@
 export const CONTRACT_ADDRESS = "0x30A837e5E93f21d30BE81cC808B0223d37EcE038";
-export const OWNER = "0xYOUR_OWNER_ADDRESS";
+export const OWNER = "0xc4578aEDb5Cc47aFE04f771C06fc0d9567B468BB";
 export const ABI = [
 	{
 		"inputs": [
