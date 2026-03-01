@@ -57,7 +57,7 @@ The updatable resume includes verified credential links and permanent storage on
 - `PROJECT-NOTES.md` — detailed project documentation and development log
 - `PROJECTS.md` — high level project overview log
 - `README.md` — this file, project overview and instructions
-
+- `CHANGELOG.md` — Writable site wiring & Pages
 ---
 
 ## 🚀 Future Improvements
