@@ -11,11 +11,11 @@ https://obasogie.github.io/deborahobasogieresume
 - `contracts/addbcResume.sol` (writable, owner-only updates; Solidity 0.8.21)
 
 ## Project Scripts (Remix flow)
-- `scripts/*Script.txt` for each section (Create → Name → Titles → Items → Verify → Edit/Delete/Update)
+- `scripts/Script.txt` for each section (Create → Name → Titles → Items → Verify → Edit/Delete/Update)
 - `OwnerScript.txt` (verify owner-only updates)
-- `ProjectsScript.txt` (skills showcase for writable resume)
+- `ProjectsScript.txt` (skills showcase for mirror and writable resumes)
 
-## How to Test (Remix VM Prague)
+## How to Test (Remix VM Prague/Sepolia testnet)
 - See **docs/testing/testing.md**
 
 ## IPFS Writable
