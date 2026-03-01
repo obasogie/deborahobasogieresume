@@ -1,4 +1,4 @@
 # CHANGELOG
 
-## Update 6 – Writable Site Wiring & Pages
+## Writable Site Wiring & Pages
 
